@@ -1,0 +1,46 @@
+:root {
+    --gold: rgba(196, 152, 6, 0.827);
+}
+.mettalic-gold {
+   background-color: var(--gold);
+}
+
+.landing-header {
+    background-image: url(images/david\ goggins.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: 100% 80vh;
+}
+.nav-link:hover {
+    color: burlywood !important;
+}
+.ratio-16x9 {
+    @include media-breakpoint-up(md) {
+      --bs-aspect-ratio: 50%; // 2x1
+    }
+   }
+
+.military {
+  margin-left: 10px;
+}
+/* .book:hover {
+  transform: scale(1.5)
+} */
+
+.merch:hover {
+   transform: scale(1.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .decades {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-header {
+    background-image: url(images/david\ goggins.jpg);
+    height: auto;
+    width: 100%;
+    background-size: 100% auto;
+}
+  
+}
